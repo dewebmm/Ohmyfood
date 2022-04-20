@@ -1,0 +1,173 @@
+body{
+    font-family: 'Roboto';
+    padding-bottom: 150px;
+    position: relative;
+}
+
+#wrapper{
+    width: 100%;
+}
+
+/*------DRY------*/
+
+/*margin, padding*/
+body,
+header,
+.gps__texte,
+h1,
+h2,
+h3,
+p{
+    margin: 0;
+}
+
+.carte{
+    margin: 20px 10px;
+}
+
+section, .gps, .intro{
+    padding: 20px 0px;
+}
+
+h2 {
+    margin-left: 25px;
+    font-size: 28px;
+}
+/*font-size*/
+h1 {
+    font-size: 30px;
+    font-weight: bolder;
+}
+h3 {
+    font-size: 22px;
+    & + p{
+        font-size: 20px;
+    }
+}
+button, .fonction_li{
+    font-size: 20px;
+    font-weight:600;
+}
+
+.gps__texte{
+    font-size: 18px;
+    font-weight: 600;}
+
+/*alignement*/
+
+#logo, .reservez{
+    text-align: center;
+}
+/*CSS*/
+#logo{
+    padding-top: 20px;
+    & img{ width:270px;}
+}
+
+.gps{
+    box-shadow: inset 0px 7px 10px -5px #AAAAAA;
+    background: #EAEAEA;
+    color: #383838;
+    &__texte{
+        display: inline-block;
+    }
+    &::before{
+        font-family: "fontAwesome";
+        content: "\f3c5";
+    }
+}
+
+.intro{
+    background: #F6F6F6;
+    height: 300px;
+    &__texte{
+        padding: 30px 20px;
+        font-weight: lighter;
+        font-size: 24px;
+    }
+    & button{
+        border-radius: 50px;
+        background: linear-gradient(#FF79DA,#9356DC);
+        border: none;
+        color: white;
+        padding: 30px 25px;
+    }
+}
+.fonctionnement{
+    ol{
+    & + .telephone::before{
+        font-family: "fontAwesome";
+        content: "\f3cd"
+    }
+}
+}
+
+
+
+
+
+
+.restaurants{
+    background: #f6f6f6;
+    padding-bottom: 20px;
+}
+.conteneur__carte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.carte{
+    border-radius: 25px;
+    width: 400px;
+    height: 300px;
+    &__img{
+        height: 210px;
+        & img{
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            object-fit: cover;
+            width: 100%;
+            height: 210px;
+        }
+    }
+    &__contenu{
+        background:white;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 90px;
+        
+    }
+    &__texte{
+        margin: auto 0px auto 15px;
+        width: 80%;
+    }
+    &__icone{
+        margin: auto;
+    }
+    &__icone::after{
+        font-family: "fontAwesome";
+        content: "\f08a";
+        font-size: 28px;
+        color: #353535;
+    }
+}
+
+footer{
+    background: #353535;
+    color: white;
+    padding: 10px 0px 0px 0px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    & img {
+        margin: 10px 0px 0px 25px;
+    }
+    ul{
+        list-style-type: none;
+    }
+    }

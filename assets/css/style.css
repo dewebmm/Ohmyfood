@@ -1,0 +1,190 @@
+body {
+  font-family: "Roboto";
+  padding-bottom: 150px;
+  position: relative;
+}
+
+#wrapper {
+  width: 100%;
+}
+
+/*------DRY------*/
+
+/*fontawesome*/
+.gps::before{
+  font-family: "fontAwesome";
+}
+/*margin, padding*/
+body,
+header,
+.gps__texte,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.carte {
+  margin: 20px 10px;
+}
+
+section, .gps, .intro {
+  padding: 20px 0px;
+}
+
+h2 {
+  margin-left: 25px;
+  font-size: 28px;
+}
+
+/*font-size*/
+h1 {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+h3 {
+  font-size: 22px;
+}
+h3 + p {
+  font-size: 20px;
+}
+
+button, .fonction_li {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.gps__texte {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/*alignement*/
+#logo, .reservez {
+  text-align: center;
+}
+
+/*CSS*/
+#logo {
+  padding-top: 20px;
+}
+#logo img {
+  width: 270px;
+}
+
+.gps {
+  box-shadow: inset 0px 7px 10px -5px #AAAAAA;
+  background: #EAEAEA;
+  color: #383838;
+}
+.gps__texte {
+  display: inline-block;
+}
+.gps::before {
+  content: "\f3c5";
+}
+
+.intro {
+  background: #F6F6F6;
+  height: 300px;
+}
+.intro__texte {
+  padding: 30px 20px;
+  font-weight: lighter;
+  font-size: 24px;
+}
+.intro button {
+  border-radius: 50px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border: none;
+  color: white;
+  padding: 30px 25px;
+}
+
+ol{
+  display: flex;
+  flex-direction: column;
+}
+.liste{
+  display: inline;
+  background: rgb(222, 6, 6);
+  box-shadow: 0px 0px 6px 1px #565656;
+  width: 400px;
+  height: 70px;
+  margin: 10px 0px;
+  border-radius: 20px;
+}
+
+.telephone::before{
+
+}
+
+.restaurants {
+  background: #f6f6f6;
+  padding-bottom: 20px;
+}
+
+.conteneur__carte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carte {
+  border-radius: 25px;
+  width: 400px;
+  height: 300px;
+}
+.carte__img {
+  height: 210px;
+}
+.carte__img img {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 210px;
+}
+.carte__contenu {
+  background: white;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 90px;
+}
+.carte__texte {
+  margin: auto 0px auto 15px;
+  width: 75%;
+}
+.carte__icone {
+  margin: auto;
+  transform:scaleY(1.3);
+}
+.carte__icone::after {
+  font-family: "fontAwesome";
+  content: "\f08a";
+  font-size: 28px;
+  color: #353535;
+}
+
+footer {
+  background: #343434;
+  color: white;
+  padding: 10px 0px 0px 0px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+footer img {
+  margin: 10px 0px 0px 25px;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(97%) saturate(2%) hue-rotate(162deg) brightness(109%) contrast(100%);
+}
+footer ul {
+  list-style-type: none;
+}/*# sourceMappingURL=style.css.map */
