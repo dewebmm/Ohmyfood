@@ -108,20 +108,28 @@ button, .fonction_li{
         align-items: center;
         list-style: none;
         padding: 0;
+        position: relative;
         .liste{
             font-weight: bold;
             line-height: 70px;
             background: #F6F6F6;
             box-shadow: 0px 0px 10px 0px #aaaaaa;
-            width: 90%;
+            width: 85%;
+            min-width: 320px;
             height: 70px;
-            margin: 10px 0px;
+            margin: 10px 0px 10px 20px;
             border-radius: 20px;
-            counter-increment: item;
+            counter-increment: number;
             margin-bottom: 5px;}
 
         .liste::before{
-            content: counter(item);
+            
+            position: absolute;
+            margin-top: 20px;
+            height: 20px;
+            left: 6%;
+            line-height: 20px;
+            content: counter(number);
             font-weight: normal;
             background: #9356DC;
             border-radius: 100%;

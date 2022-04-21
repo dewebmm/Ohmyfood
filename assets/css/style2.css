@@ -82,7 +82,7 @@ main {
   padding-top: 20px;
   font-weight: 400;
   font-size: 16px;
-  margin: 0px 20px;
+  margin: auto;
   width: 90%;
   display: flex;
   justify-content: space-between;
