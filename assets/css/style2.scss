@@ -43,6 +43,7 @@ a {
 
 a:visited {
     color: initial;
+}
 /*CSS*/
 #logo {
     text-align: center;
@@ -78,6 +79,7 @@ main{
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
 }
+
 .titre_principal{
     padding-top: 20px;
     font-weight: 400;
@@ -88,18 +90,34 @@ main{
     justify-content: space-between;
     font-family: 'Shrikhand';
 }
-.h1_icone{    
-    transform: scale(1.1,1.3);
+
+.h1_icone {
     padding-top: 10px;
-    font-weight: 100;
-}
-.h1_icone::after {
-    font-family: "fontAwesome";
-    content: "\f08a";
+    transform: scaleY(1.4);
+    position: relative;
     font-size: 28px;
     font-weight: 100;
     color: #353535;
+
+    .fa-regular {
+        position: absolute;
+        top: 6px;
+        right: 0px;
+    }
+
+    .fa-solid {
+        position: absolute;
+        top: 6px;
+        right: -10px;
+        color: rgba(255, 255, 255, 0);
+    }
+
+    .fa-solid:hover {
+        display: inline;
+        color: #9356DC;
+    }
 }
+
 @keyframes section {
     0% {
         transform: translateY(100%);
@@ -151,8 +169,7 @@ h2::after{
 
 .prix{
     text-align: right;
-    font-weight: bold;
-}
+    font-weight: bold;}
 
 .bouton{
     text-align: center;

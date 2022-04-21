@@ -36,6 +36,16 @@ h2, button {
   font-size: 18px;
 }
 
+a {
+  text-decoration: none;
+  text-transform: none;
+  color: inherit;
+}
+
+a:visited {
+  color: initial;
+}
+
 /*CSS*/
 #logo {
   text-align: center;
@@ -87,17 +97,27 @@ main {
 }
 
 .h1_icone {
-  transform: scale(1.1, 1.3);
   padding-top: 10px;
-  font-weight: 100;
-}
-
-.h1_icone::after {
-  font-family: "fontAwesome";
-  content: "\f08a";
+  transform: scaleY(1.4);
+  position: relative;
   font-size: 28px;
   font-weight: 100;
   color: #353535;
+}
+.h1_icone .fa-regular {
+  position: absolute;
+  top: 6px;
+  right: 0px;
+}
+.h1_icone .fa-solid {
+  position: absolute;
+  top: 6px;
+  right: -10px;
+  color: rgba(255, 255, 255, 0);
+}
+.h1_icone .fa-solid:hover {
+  display: inline;
+  color: #9356DC;
 }
 
 @-webkit-keyframes section {

@@ -119,13 +119,13 @@ a:visited {
         align-items: center;
         list-style: none;
         padding: 0;
-        position: relative;
         .liste{
+            position: relative;
             font-weight: bold;
             line-height: 70px;
             background: #F6F6F6;
             box-shadow: 0px 0px 10px 0px #aaaaaa;
-            width: 85%;
+            width: 88%;
             min-width: 320px;
             height: 70px;
             margin: 10px 0px 10px 20px;
@@ -133,12 +133,11 @@ a:visited {
             counter-increment: number;
             margin-bottom: 5px;}
 
-        .liste::before{
-            
+        .liste::before{            
             position: absolute;
             margin-top: 20px;
             height: 20px;
-            left: 6%;
+            left: -15px;
             line-height: 20px;
             content: counter(number);
             font-weight: normal;
@@ -233,10 +232,6 @@ transform:scaleX(0.9);
             display:inline;
             color:#9356DC;
         }
-        
-        font-size: 28px;
-        font-weight: 100;
-        color: #353535;
     }
    
     .nouveau {
