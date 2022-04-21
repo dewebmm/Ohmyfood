@@ -1,0 +1,160 @@
+body {
+  font-family: "Roboto";
+  padding-bottom: 180px;
+  position: relative;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#wrapper {
+  width: 100%;
+}
+
+/*------DRY------*/
+/*margin, padding*/
+body,
+header,
+.gps__texte,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.fa-solid {
+  margin-right: 10px;
+}
+
+.fa-utensils {
+  margin-right: 15px;
+}
+
+/*font-size*/
+h2, button {
+  font-size: 18px;
+}
+
+/*alignement*/
+/*CSS*/
+#logo {
+  text-align: center;
+  padding: 20px 0px;
+  box-shadow: 0px 5px 10px 0px #AAAAAA;
+}
+#logo img {
+  width: 200px;
+}
+
+#logo::before {
+  font-family: "fontawesome";
+  content: "\f060";
+  position: absolute;
+  left: 20px;
+  top: 23px;
+  font-size: 30px;
+}
+
+.background {
+  width: 100%;
+}
+
+.background img {
+  z-index: 0;
+  width: 100%;
+}
+
+main {
+  background-color: #F6F6F6;
+}
+
+.titre_principal {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0px 20px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Shrikhand";
+}
+
+.h1_icone {
+  transform: scale(1.1, 1.3);
+  padding-top: 10px;
+  font-weight: 100;
+}
+
+.h1_icone::after {
+  font-family: "fontAwesome";
+  content: "\f08a";
+  font-size: 28px;
+  font-weight: 100;
+  color: #353535;
+}
+
+.conteneur_menu {
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  box-shadow: 0px 0px 8px -1px #AAAAAA;
+  background-color: white;
+  border-radius: 15px;
+}
+
+h2 {
+  margin-left: 3%;
+  font-weight: 200;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  border-bottom: 5px solid #99E2D0;
+  width: 50px;
+}
+
+.description_menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prix {
+  text-align: right;
+  font-weight: bold;
+}
+
+.bouton {
+  text-align: center;
+}
+
+button {
+  border-radius: 50px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  margin: 50px 0px;
+}
+
+footer {
+  background: #353535;
+  color: white;
+  padding: 10px 0px 0px 0px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+footer img {
+  margin: 10px 0px 0px 25px;
+  height: 25px;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(97%) saturate(2%) hue-rotate(162deg) brightness(109%) contrast(100%);
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 25px;
+}
+footer ul li {
+  margin: 5px 0px;
+}/*# sourceMappingURL=style2.css.map */

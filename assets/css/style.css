@@ -3,6 +3,7 @@ body {
   padding-bottom: 150px;
   position: relative;
   min-width: 320px;
+  min-height: 100vh;
 }
 
 #wrapper {
@@ -218,8 +219,14 @@ footer {
 }
 footer img {
   margin: 10px 0px 0px 25px;
+  height: 25px;
   filter: brightness(0) saturate(100%) invert(100%) sepia(97%) saturate(2%) hue-rotate(162deg) brightness(109%) contrast(100%);
 }
 footer ul {
   list-style-type: none;
+  padding: 0;
+  margin-left: 25px;
+}
+footer ul li {
+  margin: 5px 0px;
 }/*# sourceMappingURL=style.css.map */
