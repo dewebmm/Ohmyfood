@@ -61,6 +61,15 @@ button, .fonction_li{
     font-size: 18px;
     font-weight: 600;}
 
+a {
+    text-decoration: none;
+    text-transform: none;
+    color: inherit;
+}
+
+a:visited {
+    text-decoration: none;
+    text-transform: none;}
 /*alignement*/
 
 #logo, .reservez{
@@ -195,7 +204,7 @@ transform:scaleX(0.9);
         width: 75%;
     }
     &__icone{
-        margin: auto;
+        margin: auto 15px auto 0px;
         transform:scaleY(1.4);
     }
     &__icone::after{

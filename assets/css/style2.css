@@ -36,7 +36,6 @@ h2, button {
   font-size: 18px;
 }
 
-/*alignement*/
 /*CSS*/
 #logo {
   text-align: center;
@@ -48,9 +47,7 @@ h2, button {
   width: 200px;
 }
 
-#logo::before {
-  font-family: "fontawesome";
-  content: "\f060";
+.fa-arrow-left {
   position: absolute;
   left: 20px;
   top: 23px;

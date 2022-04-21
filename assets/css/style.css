@@ -66,6 +66,17 @@ button, .fonction_li {
   font-weight: 600;
 }
 
+a {
+  text-decoration: none;
+  text-transform: none;
+  color: inherit;
+}
+
+a:visited {
+  text-decoration: none;
+  text-transform: none;
+}
+
 /*alignement*/
 #logo, .reservez {
   text-align: center;
@@ -204,7 +215,7 @@ button, .fonction_li {
   width: 75%;
 }
 .carte__icone {
-  margin: auto;
+  margin: auto 15px auto 0px;
   transform: scaleY(1.4);
 }
 .carte__icone::after {
