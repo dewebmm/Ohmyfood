@@ -145,6 +145,11 @@ main {
           animation-delay: 100ms;
 }
 
+.ease_menu3 {
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
+}
+
 h2 {
   margin-top: 40px;
   margin-left: 5%;
