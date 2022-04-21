@@ -151,7 +151,8 @@ h2::after{
 
 .prix{
     text-align: right;
-    font-weight: bold;}
+    font-weight: bold;
+}
 
 .bouton{
     text-align: center;
@@ -174,13 +175,11 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-
     & img {
         margin: 10px 0px 0px 25px;
         height: 25px;
         filter: brightness(0) saturate(100%) invert(100%) sepia(97%) saturate(2%) hue-rotate(162deg) brightness(109%) contrast(100%);
     }
-
     ul {
         list-style-type: none;
         padding: 0;
