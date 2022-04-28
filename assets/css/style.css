@@ -323,4 +323,44 @@ footer ul {
 }
 footer ul li {
   margin: 5px 0px;
+}
+
+@media only screen and (min-width: 768px) {
+  h2 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .reservez,
+.fonctionnement,
+.restaurantsn {
+    padding: 30px 0px;
+  }
+
+  .reservez {
+    background: linear-gradient(#EAEAEA, #99E2D0 20%);
+  }
+
+  .fonctionnement {
+    background: linear-gradient(#99E2D0, #EAEAEA 40%);
+  }
+  .fonctionnement ol {
+    background: linear-gradient(#c4eae0, #EAEAEA 40%);
+  }
+  .fonctionnement ol .liste {
+    width: 50%;
+  }
+
+  .restaurants {
+    background: linear-gradient(#EAEAEA 1%, #99E2D0 99%);
+  }
+
+  .carte {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  body {
+    background-color: yellow;
+  }
 }/*# sourceMappingURL=style.css.map */

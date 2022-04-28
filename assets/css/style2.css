@@ -145,17 +145,6 @@ input:checked ~ .unchecked {
   right: 0px;
 }
 
-@-webkit-keyframes section {
-  0% {
-    transform: translateY(100%);
-    opacity: 0.1;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 @keyframes section {
   0% {
     transform: translateY(100%);
@@ -167,28 +156,50 @@ input:checked ~ .unchecked {
   }
 }
 .conteneur_menu {
+  min-width: 85%;
   width: 85%;
+  max-width: 85%;
   margin: 10px auto;
   padding: 15px;
   box-shadow: 0px 0px 8px 0px #d6d6d6;
   background-color: white;
+  background-image: linear-gradient(to right, transparent 50%, #99E2D0 50%);
+  background-size:200%;
+  background-position: 0%;
   border-radius: 15px;
-  -webkit-animation: 1s ease 0s 1 section;
-          animation: 1s ease 0s 1 section;
 }
 
+.ease_menu,.ease_menu1,.ease_menu2,.ease_menu3{
+  transition:0.4s;
+  animation: 1s ease 0s 1 section;
+
+}
+
+.conteneur_menu:hover{
+  background-position: -100px;
+  position:relative;
+  transform: rotate(0deg);
+  transition: 1s ease-in-out;
+}
+.conteneur_menu:hover::after {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f058';
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  right: 37px;
+  top:20px;
+  transform: rotate(360deg);
+}
 .ease_menu1 {
-  -webkit-animation-delay: 50ms;
           animation-delay: 50ms;
 }
 
 .ease_menu2 {
-  -webkit-animation-delay: 100ms;
           animation-delay: 100ms;
 }
 
 .ease_menu3 {
-  -webkit-animation-delay: 150ms;
           animation-delay: 150ms;
 }
 
