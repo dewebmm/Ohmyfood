@@ -239,28 +239,6 @@ a:visited {
   margin: auto 0px auto 25px;
   width: 75%;
 }
-.carte__icone {
-  margin: auto 0px auto 0px;
-  transform: scaleY(1.2);
-  position: relative;
-  font-size: 28px;
-  color: #353535;
-}
-.carte__icone .fa-regular {
-  position: absolute;
-  top: -18px;
-  right: 25px;
-}
-.carte__icone .fa-solid {
-  position: absolute;
-  top: -18px;
-  right: 15px;
-  color: rgba(255, 255, 255, 0);
-}
-.carte__icone .fa-solid:hover {
-  display: inline;
-  color: #9356DC;
-}
 .carte .nouveau {
   width: 90px;
   position: absolute;
@@ -273,6 +251,55 @@ a:visited {
   font-size: 15px;
   text-align: center;
   padding: 7px 0px;
+}
+
+.carte_icone {
+  margin: auto 20px auto 0px;
+  transform: scaleY(1.2);
+  position: relative;
+  font-size: 28px;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.checked {
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.unchecked {
+  position: absolute;
+  bottom: -10px;
+  right: 0px;
+  background: rgb(53, 53, 53);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+input {
+  position: absolute;
+  bottom: -10px;
+  right: 0px;
+  display: none;
+}
+
+input:checked ~ .checked {
+  position: absolute;
+  bottom: -10px;
+  right: 0px;
+  display: none;
+}
+
+input:checked ~ .unchecked {
+  position: absolute;
+  bottom: -10px;
+  right: 0px;
 }
 
 footer {

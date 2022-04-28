@@ -97,26 +97,42 @@ main{
     position: relative;
     font-size: 28px;
     font-weight: 100;
-    color: #353535;
-
-    .fa-regular {
+    cursor: pointer;
+} 
+.checked{
+    position: absolute;
+    top: -3px;
+    right: -10px;
+    background: linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
+    color:transparent;
+}
+.unchecked{
+    position: absolute;
+    top: -3px;
+    right: 0px;    
+    background: rgb(53, 53, 53);
+    background-clip: text;
+    color:transparent;
+}
+input{
+    position: absolute;
+    top: -3px;
+    right: 0px;
+    display: none;
+}
+    
+input:checked~ .checked {
+    position: absolute;
+    top: -3px;
+    right: 0px;
+    display: none;
+    }
+input:checked~ .unchecked {
         position: absolute;
-        top: 6px;
+        top: -3px;
         right: 0px;
     }
-
-    .fa-solid {
-        position: absolute;
-        top: 6px;
-        right: -10px;
-        color: rgba(255, 255, 255, 0);
-    }
-
-    .fa-solid:hover {
-        display: inline;
-        color: #9356DC;
-    }
-}
 
 @keyframes section {
     0% {
