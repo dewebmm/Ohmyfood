@@ -1,6 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
-  padding-bottom: 150px;
+  padding-bottom: 170px;
   position: relative;
   min-width: 320px;
   min-height: 100vh;
@@ -26,13 +26,18 @@ p {
   margin: 20px 10px;
 }
 
-section, .gps, .intro {
+.gps {
   padding: 20px 0px;
 }
 
+.reservez, .fonctionnement, .restaurants {
+  padding: 50px 0px;
+}
+
 h2 {
+  font-weight: 900;
   margin-left: 25px;
-  font-size: 25px;
+  font-size: 28px;
 }
 
 .fa-solid {
@@ -46,23 +51,30 @@ h2 {
 /*font-size*/
 h1 {
   font-size: 30px;
-  font-weight: bolder;
+  font-weight: 900;
 }
 
 h3 {
+  font-weight: 900;
   font-size: 22px;
+  margin-bottom: 4px;
 }
 h3 + p {
   font-size: 20px;
 }
 
-button, .fonction_li {
+button {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.fonction_li {
   font-size: 18px;
   font-weight: 600;
 }
 
 .gps__texte {
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 600;
 }
 
@@ -78,13 +90,15 @@ a:visited {
 }
 
 /*alignement*/
-#logo, .reservez {
+.gps, #logo, .reservez {
   text-align: center;
 }
 
 /*CSS*/
 #logo {
-  padding-top: 20px;
+  text-align: center;
+  padding: 20px 0px;
+  box-shadow: 0px 5px 10px 0px #aaaaaa;
 }
 #logo img {
   width: 200px;
@@ -101,15 +115,19 @@ a:visited {
 .gps::before {
   font-family: "fontAwesome";
   content: "\f3c5";
+  margin-right: 10px;
+}
+
+.reservez {
+  background: #F6F6F6;
 }
 
 .intro {
-  background: #F6F6F6;
   height: 100%;
 }
 .intro__texte {
   padding: 30px 20px;
-  font-weight: lighter;
+  font-weight: 300;
   font-size: 22px;
 }
 .intro button {
@@ -118,8 +136,7 @@ a:visited {
   border: none;
   color: white;
   padding: 20px 25px;
-  margin-top: 10px;
-  margin-bottom: 40px;
+  margin: 10px;
 }
 
 .fonctionnement ol {
@@ -130,6 +147,7 @@ a:visited {
   padding: 0;
 }
 .fonctionnement ol .liste {
+  font-size: 18px;
   position: relative;
   font-weight: bold;
   line-height: 70px;
@@ -142,6 +160,9 @@ a:visited {
   border-radius: 20px;
   counter-increment: number;
   margin-bottom: 5px;
+}
+.fonctionnement ol .stand {
+  background: #F5EDFF;
 }
 .fonctionnement ol .liste::before {
   position: absolute;
@@ -180,7 +201,6 @@ a:visited {
 
 .restaurants {
   background: #f6f6f6;
-  padding-bottom: 20px;
 }
 
 .conteneur__carte {
@@ -189,12 +209,8 @@ a:visited {
   align-items: center;
 }
 
-.nouveau {
-  position: absolute;
-  width: 90px;
-}
-
 .carte {
+  box-shadow: 0px 0px 10px 0px #aaaaaa;
   position: relative;
   border-radius: 25px;
   width: 90%;
@@ -225,10 +241,9 @@ a:visited {
 }
 .carte__icone {
   margin: auto 0px auto 0px;
-  transform: scaleY(1.4);
+  transform: scaleY(1.2);
   position: relative;
   font-size: 28px;
-  font-weight: 100;
   color: #353535;
 }
 .carte__icone .fa-regular {
@@ -247,12 +262,13 @@ a:visited {
   color: #9356DC;
 }
 .carte .nouveau {
+  width: 90px;
   position: absolute;
   top: 20px;
   right: 20px;
-  background: #d2d2d2;
+  background: #99E2D0;
   border-radius: 3px;
-  color: #7d7d7d;
+  color: #008766;
   font-weight: bold;
   font-size: 15px;
   text-align: center;

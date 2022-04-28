@@ -86,7 +86,7 @@ main {
 }
 
 .titre_principal {
-  padding-top: 20px;
+  padding-top: 40px;
   font-weight: 400;
   font-size: 16px;
   margin: auto;
@@ -98,7 +98,7 @@ main {
 
 .h1_icone {
   padding-top: 10px;
-  transform: scaleY(1.4);
+  transform: scaleY(1.2);
   position: relative;
   font-size: 28px;
   font-weight: 100;
@@ -169,15 +169,17 @@ main {
 
 h2 {
   margin-top: 40px;
+  margin-bottom: 20px;
   margin-left: 5%;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 h2::after {
   content: "";
   display: block;
-  border-bottom: 5px solid #99E2D0;
-  width: 50px;
+  border-bottom: 3px solid #99E2D0;
+  padding-top: 4px;
+  width: 45px;
 }
 
 .description_menu {
