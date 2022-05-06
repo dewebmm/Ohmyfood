@@ -323,4 +323,43 @@ footer ul {
 }
 footer ul li {
   margin: 5px 0px;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    font-family: "Roboto";
+    padding-bottom: 160px;
+  }
+
+  header {
+    background-color: #353535;
+  }
+  header #logo {
+    margin-bottom: 100px;
+  }
+  header #logo img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(97%) saturate(2%) hue-rotate(162deg) brightness(109%) contrast(100%);
+  }
+  header .fa-arrow-left {
+    color: white;
+  }
+
+  main {
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+  }
+
+  .background {
+    height: 90%;
+  }
+
+  .background img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }/*# sourceMappingURL=style2.css.map */
