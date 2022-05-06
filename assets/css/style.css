@@ -384,6 +384,10 @@ footer ul li {
   }
 }
 @media only screen and (min-width: 992px) {
+  body {
+    max-width: 1440px;
+  }
+
   .reservez {
     border-top-right-radius: 200px;
     border-top-left-radius: 200px;
