@@ -92,6 +92,7 @@ main{
 }
 
 .h1_icone {
+    width: 40px;
     padding-top: 10px;
     transform: scaleY(1.2);
     position: relative;
@@ -101,7 +102,7 @@ main{
 } 
 .checked{
     position: absolute;
-    top: -3px;
+    top: 8px;
     right: -10px;
     background: linear-gradient(#9356DC, #FF79DA);
     background-clip: text;
@@ -109,7 +110,7 @@ main{
 }
 .unchecked{
     position: absolute;
-    top: -3px;
+    top: 8px;
     right: 0px;    
     background: rgb(53, 53, 53);
     background-clip: text;
@@ -117,20 +118,20 @@ main{
 }
 input{
     position: absolute;
-    top: -3px;
+    top: 8px;
     right: 0px;
     display: none;
 }
     
 input:checked~ .checked {
     position: absolute;
-    top: -3px;
+    top: 8px;
     right: 0px;
     display: none;
     }
 input:checked~ .unchecked {
         position: absolute;
-        top: -3px;
+        top: 8px;
         right: 0px;
     }
 
@@ -161,33 +162,35 @@ input:checked~ .unchecked {
     border-radius: 15px;
     position: relative;
     &:hover {
-        background-position: -100px;
-        transition: 0.4s ease-in-out;
+        background-position: -90px;
+        transition: 0.4s ease;
         &::after {
         font-family: 'Font Awesome 6 Free';
         content: '\f058';
         font-size: 30px;
         position: absolute;
-        right: 37px;
+        right: 32px;
         top: 20px;
-        transition: ease-in-out;
+        transition: ease;
         color: rgb(255, 255, 255);
         animation-name: spin;
         animation-duration: 0.5s;
         }
-        .prix{    
-        transform: translateX(-100px);
-        transition: 0.4s ease-in-out;
-}
+        .prix{            
+            transform: translateX(-90px);
+            transition:  width 0.4s ease, transform 0.4s ease;
+            width: 200px;
+        }
     }
-    
 }
+    
+
 @keyframes spin {
     0%{
         color: rgba(92, 92, 7, 0);
-        right: 0px;
+        right: -3px;
     }
-    50%{
+    20%{
         color: white;
     }
     100% {
@@ -235,12 +238,19 @@ h2::after{
 .description_menu{
     display: flex;
     justify-content: space-between;
+    p{
+        display: inline;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
 }
 
 .prix{
+    width: 100px;
     text-align: right;
     font-weight: bold;
-    transition: 0.4s ease;
+    transition: width 0.4s ease,transform 0.4s ease;
 }
 
 .bouton{
