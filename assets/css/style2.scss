@@ -147,22 +147,74 @@ input:checked~ .unchecked {
 }
 
 
-.conteneur_menu{
+.conteneur_menu {
+    min-width: 85%;
     width: 85%;
+    max-width: 85%;
     margin: 10px auto;
     padding: 15px;
     box-shadow: 0px 0px 8px 0px #d6d6d6;
     background-color: white;
+    background-image: linear-gradient(to right, transparent 50%, #99E2D0 50%);
+    background-size: 200%;
+    background-position: 0%;
     border-radius: 15px;
-    animation: 1s ease 0s 1 section;
+    position: relative;
+    &:hover {
+        background-position: -100px;
+        transition: 0.4s ease-in-out;
+        &::after {
+        font-family: 'Font Awesome 6 Free';
+        content: '\f058';
+        font-size: 30px;
+        position: absolute;
+        right: 37px;
+        top: 20px;
+        transition: ease-in-out;
+        color: rgb(255, 255, 255);
+        animation-name: spin;
+        animation-duration: 0.5s;
+        }
+        .prix{    
+        transform: translateX(-100px);
+        transition: 0.4s ease-in-out;
 }
-.ease_menu1{
+    }
+    
+}
+@keyframes spin {
+    0%{
+        color: rgba(92, 92, 7, 0);
+        right: 0px;
+    }
+    50%{
+        color: white;
+    }
+    100% {
+        transform: rotate(360deg);
+        color: white;
+    }
+}
+
+
+.ease_menu,
+.ease_menu1,
+.ease_menu2,
+.ease_menu3 {
+    transition: 0.4s;
+    animation: 1s ease 0s 1 section;
+
+}
+
+.ease_menu1 {
     animation-delay: 50ms;
 }
-.ease_menu2{
+
+.ease_menu2 {
     animation-delay: 100ms;
 }
-.ease_menu3{
+
+.ease_menu3 {
     animation-delay: 150ms;
 }
 
@@ -187,7 +239,9 @@ h2::after{
 
 .prix{
     text-align: right;
-    font-weight: bold;}
+    font-weight: bold;
+    transition: 0.4s ease;
+}
 
 .bouton{
     text-align: center;
