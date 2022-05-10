@@ -202,7 +202,7 @@ input:checked ~ .unchecked {
 .conteneur_menu:hover .prix {
   transform: translateX(-90px);
   transition: width 0.4s ease, transform 0.4s ease;
-  width: 200px;
+  width: 90px;
 }
 
 @-webkit-keyframes spin {

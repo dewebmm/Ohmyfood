@@ -131,12 +131,16 @@ a:visited {
   font-size: 22px;
 }
 .intro button {
+  cursor: pointer;
   border-radius: 50px;
   background: linear-gradient(#FF79DA, #9356DC);
   border: none;
   color: white;
   padding: 20px 25px;
   margin: 10px;
+}
+.intro button:hover {
+  background: linear-gradient(#fa8cdb, #9467ca);
 }
 
 .fonctionnement ol {
@@ -147,6 +151,7 @@ a:visited {
   padding: 0;
 }
 .fonctionnement ol .liste {
+  cursor: pointer;
   font-size: 18px;
   position: relative;
   font-weight: bold;
@@ -161,8 +166,22 @@ a:visited {
   counter-increment: number;
   margin-bottom: 5px;
 }
-.fonctionnement ol .stand {
+.fonctionnement ol .liste:hover {
+  transition: 0.6s;
   background: #F5EDFF;
+}
+.fonctionnement ol .liste:hover .fa-mobile-screen-button, .fonctionnement ol .liste:hover .fa-list,
+.fonctionnement ol .liste:hover .fa-store {
+  transition: 0.6s;
+  color: #9356DC;
+}
+.fonctionnement ol .liste:not(:hover) {
+  transition: 0.6s;
+}
+.fonctionnement ol .liste:not(:hover) .fa-mobile-screen-button,
+.fonctionnement ol .liste:not(:hover) .fa-list,
+.fonctionnement ol .liste:not(:hover) .fa-store {
+  transition: 0.6s;
 }
 .fonctionnement ol .liste::before {
   position: absolute;
@@ -185,14 +204,7 @@ a:visited {
   transform: scaleY(1.1);
   margin-left: 30px;
   margin-right: 15px;
-}
-
-.fa-mobile-screen-button, .fa-list {
   color: #646464;
-}
-
-.fa-store {
-  color: #9356DC;
 }
 
 .fa-list {
@@ -215,6 +227,15 @@ a:visited {
   border-radius: 25px;
   width: 90%;
   height: 300px;
+}
+.carte:hover {
+  cursor: pointer;
+  transition: 0.6s;
+  opacity: 0.8;
+  box-shadow: 0px 0px 20px 0px #aaaaaa;
+}
+.carte:not(:hover) {
+  transition: 0.4s;
 }
 .carte__img {
   height: 210px;
@@ -384,7 +405,7 @@ footer ul li {
   }
 }
 @media only screen and (min-width: 992px) {
-  body {
+  .wrapper {
     max-width: 1440px;
   }
 
