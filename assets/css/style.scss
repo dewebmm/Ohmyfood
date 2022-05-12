@@ -104,7 +104,7 @@ a:visited {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-45%, -45%);
+        transform: translate(-50%, -50%);
         color: transparent;
         vertical-align: top;
         background: linear-gradient(to top,#FF79DA 50%, #9356DC 50%);
@@ -513,4 +513,14 @@ footer{
     }
     li{display: flex;
         }
+        
+    .carte{
+        height: 400px;  
+        &__img{
+            height: 310px;
+            & img{
+                height: 310px;
+            }
+        }
+    }
 }
