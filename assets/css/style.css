@@ -95,6 +95,104 @@ a:visited {
 }
 
 /*CSS*/
+.loader {
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  -webkit-animation: 3s 1 load;
+          animation: 3s 1 load;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader__logo {
+  font-size: 90px;
+  position: absolute;
+  color: transparent;
+  vertical-align: top;
+  background: linear-gradient(to top, #99E2D0 50%, #353535 50%);
+  background-size: 100% 300%;
+  background-position: bottom left;
+  -webkit-background-clip: text;
+          background-clip: text;
+  z-index: 1;
+  -webkit-animation: 3s 1 loadlogo;
+          animation: 3s 1 loadlogo;
+}
+
+@-webkit-keyframes load {
+  0% {
+    background: #9356DC;
+    opacity: 1;
+  }
+  70% {
+    background-color: #9356DC;
+    opacity: 1;
+  }
+  80% {
+    background-color: #99E2D0;
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes load {
+  0% {
+    background: #9356DC;
+    opacity: 1;
+  }
+  70% {
+    background-color: #9356DC;
+    opacity: 1;
+  }
+  80% {
+    background-color: #99E2D0;
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes loadlogo {
+  0% {
+    background-position: top left;
+    font-size: 90px;
+    opacity: 1;
+  }
+  70% {
+    font-size: 90px;
+    opacity: 1;
+  }
+  80% {
+    font-size: 150px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loadlogo {
+  0% {
+    background-position: top left;
+    font-size: 90px;
+    opacity: 1;
+  }
+  70% {
+    font-size: 90px;
+    opacity: 1;
+  }
+  80% {
+    font-size: 150px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 #logo {
   text-align: center;
   padding: 20px 0px;
