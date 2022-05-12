@@ -110,6 +110,9 @@ a:visited {
 .loader__logo {
   font-size: 90px;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -45%);
   color: transparent;
   vertical-align: top;
   background: linear-gradient(to top, #FF79DA 50%, #9356DC 50%);
