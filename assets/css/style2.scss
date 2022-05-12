@@ -33,7 +33,7 @@ p {
 }
 
 /*font-size*/
-h2, button{font-size: 18px;}
+h2, .commander{font-size: 18px;}
 
 a {
     text-decoration: none;
@@ -90,8 +90,8 @@ main{
     justify-content: space-between;
     font-family: 'Shrikhand';
 }
-
-.h1_icone {
+ 
+.favori {
     width: 28px;
     padding-top: 10px;
     transform: scaleY(1.2);
@@ -100,40 +100,39 @@ main{
     font-weight: 100;
     cursor: pointer;
 } 
-.checked{
+.checked {
     position: absolute;
     top: 8px;
     right: -10px;
-    background: linear-gradient(#9356DC, #FF79DA);
-    background-clip: text;
-    color:transparent;
+    color: transparent;
 }
-.unchecked{
+
+.unchecked {
     position: absolute;
     top: 8px;
-    right: 0px;    
-    background: rgb(53, 53, 53);
-    background-clip: text;
-    color:transparent;
+    right: 0px;
+    color: #353535;
 }
-input{
+
+input {
     position: absolute;
     top: 8px;
     right: 0px;
     display: none;
 }
-    
-input:checked~ .checked {
+
+input:checked~.checked {
     position: absolute;
+    z-index: 1;
     top: 8px;
-    right: 0px;
-    display: none;
-    }
-input:checked~ .unchecked {
-        position: absolute;
-        top: 8px;
-        right: 0px;
-    }
+    right: -10px;
+    background: linear-gradient(to top,#FF79DA,#9356DC, transparent 80%);
+    transition: background-position 0.6s ease;
+    background-size: 100% 200%;
+    background-position: bottom left;    
+    background-clip: text;
+    color: transparent;
+}
 
 @keyframes section {
     0% {
@@ -183,8 +182,6 @@ input:checked~ .unchecked {
         }
     }
 }
-    
-
 @keyframes spin {
     0%{
         color: rgba(92, 92, 7, 0);
@@ -257,7 +254,7 @@ h2::after{
     text-align: center;
 }
 
-button {
+.commander {
     cursor: pointer;
     border-radius: 50px;
     background: linear-gradient(#FF79DA, #9356DC);

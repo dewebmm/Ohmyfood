@@ -216,13 +216,14 @@ a:visited {
             width: 88%;
             min-width: 320px;
             height: 70px;
-            margin: 10px 0px 10px 20px;
+            margin: 10px 0px 0px 20px;
             border-radius: 20px;
             counter-increment: number;
             margin-bottom: 5px;
             &:hover{
                 transition: 0.6s;
                 background: #F5EDFF;
+                box-shadow: 0px 0px 20px 0px #aaaaaa;
                 .fa-mobile-screen-button, .fa-list,
                     .fa-store{
                     transition: 0.6s;                
@@ -342,12 +343,20 @@ transform:scaleX(0.9);
     cursor: pointer;
 }
 
+.favori {
+    width: 28px;
+    padding-top: 10px;
+    transform: scaleY(1.2);
+    position: relative;
+    font-size: 28px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
 .checked {
     position: absolute;
     bottom: -10px;
     right: -10px;
-    background: linear-gradient(#9356DC, #FF79DA);
-    background-clip: text;
     color: transparent;
 }
 
@@ -355,9 +364,7 @@ transform:scaleX(0.9);
     position: absolute;
     bottom: -10px;
     right: 0px;
-    background: rgb(53, 53, 53);
-    background-clip: text;
-    color: transparent;
+    color: #353535;
 }
 
 input {
@@ -369,17 +376,16 @@ input {
 
 input:checked~.checked {
     position: absolute;
+    z-index: 1;
     bottom: -10px;
-    right: 0px;
-    display: none;
+    right: -10px;
+    background: linear-gradient(to top, #FF79DA, #9356DC, transparent 80%);
+    transition: background-position 0.6s ease;
+    background-size: 100% 200%;
+    background-position: bottom left;
+    background-clip: text;
+    color: transparent;
 }
-
-input:checked~.unchecked {
-    position: absolute;
-    bottom: -10px;
-    right: 0px;
-}
-   
 
 
 
@@ -485,7 +491,7 @@ footer{
                 align-items: center;
                 height: 200px;
                 width: 33%;
-                box-shadow: 0px 0px 0px 0px #aaaaaa;
+                box-shadow: 0px 0px 5px 0px #b5b5b5;
                 min-width: auto;
                 border-radius: 0px;
                 margin: auto;                
