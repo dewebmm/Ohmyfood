@@ -176,6 +176,12 @@ input:checked ~ .checked {
   border-radius: 15px;
   position: relative;
 }
+.conteneur_menu + h3 {
+  display: inline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .conteneur_menu:hover {
   background-position: -90px;
   transition: 0.4s ease;
@@ -197,7 +203,7 @@ input:checked ~ .checked {
 .conteneur_menu:hover .prix {
   transform: translateX(-90px);
   transition: width 0.4s ease, transform 0.4s ease;
-  width: 90px;
+  width: 250px;
 }
 
 @-webkit-keyframes spin {
