@@ -106,28 +106,28 @@ main {
   cursor: pointer;
 }
 
-.checked {
+.full__heart {
   position: absolute;
   top: 8px;
   right: -10px;
   color: transparent;
 }
 
-.unchecked {
+.empty__heart {
   position: absolute;
   top: 8px;
   right: 0px;
   color: #353535;
 }
 
-input {
+#heart {
   position: absolute;
   top: 8px;
   right: 0px;
   display: none;
 }
 
-input:checked ~ .checked {
+#heart:checked + .full__heart {
   position: absolute;
   z-index: 1;
   top: 8px;
@@ -163,24 +163,21 @@ input:checked ~ .checked {
   }
 }
 .conteneur_menu {
+  display: flex;
+  justify-content: space-between;
   min-width: 85%;
   width: 85%;
   max-width: 85%;
   margin: 10px auto;
   padding: 15px;
-  box-shadow: 0px 0px 8px 0px #d6d6d6;
+  box-shadow: 0px 3px 5px 0px #d6d6d6;
+  cursor: pointer;
   background-color: white;
   background-image: linear-gradient(to right, transparent 50%, #99E2D0 50%);
   background-size: 200%;
   background-position: 0%;
   border-radius: 15px;
   position: relative;
-}
-.conteneur_menu + h3 {
-  display: inline;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .conteneur_menu:hover {
   background-position: -90px;
@@ -200,10 +197,32 @@ input:checked ~ .checked {
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
 }
-.conteneur_menu:hover .prix {
+.conteneur_menu:hover .conteneur_prix {
   transform: translateX(-90px);
-  transition: width 0.4s ease, transform 0.4s ease;
-  width: 250px;
+  padding-left: 90px;
+  transition: 0.4s ease;
+}
+
+.description_menu {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.description_menu h3, .description_menu p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.conteneur_prix {
+  display: flex;
+  justify-content: end;
+  width: 40px;
+  transition: 0.4s ease;
+}
+.conteneur_prix .prix {
+  align-self: flex-end;
+  font-weight: bold;
 }
 
 @-webkit-keyframes spin {
@@ -270,24 +289,6 @@ h2::after {
   border-bottom: 3px solid #99E2D0;
   padding-top: 4px;
   width: 45px;
-}
-
-.description_menu {
-  display: flex;
-  justify-content: space-between;
-}
-.description_menu p {
-  display: inline;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.prix {
-  width: 100px;
-  text-align: right;
-  font-weight: bold;
-  transition: width 0.4s ease, transform 0.4s ease;
 }
 
 .bouton {

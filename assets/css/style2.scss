@@ -100,28 +100,28 @@ main{
     font-weight: 100;
     cursor: pointer;
 } 
-.checked {
+.full__heart {
     position: absolute;
     top: 8px;
     right: -10px;
     color: transparent;
 }
 
-.unchecked {
+.empty__heart {
     position: absolute;
     top: 8px;
     right: 0px;
     color: #353535;
 }
 
-input {
+#heart {
     position: absolute;
     top: 8px;
     right: 0px;
     display: none;
 }
 
-input:checked~.checked {
+#heart:checked + .full__heart {
     position: absolute;
     z-index: 1;
     top: 8px;
@@ -148,24 +148,21 @@ input:checked~.checked {
 
 
 .conteneur_menu {
+    display: flex;
+    justify-content: space-between;
     min-width: 85%;
     width: 85%;
     max-width: 85%;
     margin: 10px auto;
     padding: 15px;
-    box-shadow: 0px 0px 8px 0px #d6d6d6;
+    box-shadow: 0px 3px 5px 0px #d6d6d6;
+    cursor: pointer;
     background-color: white;
     background-image: linear-gradient(to right, transparent 50%, #99E2D0 50%);
     background-size: 200%;
     background-position: 0%;
     border-radius: 15px;
-    position: relative;
-    &+ h3{
-        display: inline;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
+    position: relative;    
     &:hover {
         background-position: -90px;
         transition: 0.4s ease;
@@ -181,11 +178,31 @@ input:checked~.checked {
         animation-name: spin;
         animation-duration: 0.5s;
         }
-        .prix{            
+        .conteneur_prix{
             transform: translateX(-90px);
-            transition:  width 0.4s ease, transform 0.4s ease;
-            width: 250px;
+            padding-left: 90px;
+            transition: 0.4s ease;
         }
+    }
+}
+.description_menu {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    h3, p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+.conteneur_prix{
+    display: flex;
+    justify-content: end;
+    width: 40px;
+    transition: 0.4s ease;
+    .prix {
+        align-self: flex-end;
+        font-weight: bold;
     }
 }
 @keyframes spin {
@@ -238,23 +255,7 @@ h2::after{
     width: 45px;
 }
 
-.description_menu{
-    display: flex;
-    justify-content: space-between;
-    p{
-        display: inline;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-}
 
-.prix{
-    width: 100px;
-    text-align: right;
-    font-weight: bold;
-    transition: width 0.4s ease,transform 0.4s ease;
-}
 
 .bouton{
     text-align: center;

@@ -108,7 +108,7 @@ a:visited {
         color: transparent;
         vertical-align: top;
         background: linear-gradient(to top,#FF79DA 50%, #9356DC 50%);
-        background-size: 100% 300%;
+        background-size: 100% 220%;
         background-position: bottom left;
         background-clip: text;
         z-index: 1;
@@ -356,28 +356,28 @@ transform:scaleX(0.9);
     cursor: pointer;
 }
 
-.checked {
+.full__heart {
     position: absolute;
     bottom: -10px;
     right: -10px;
     color: transparent;
 }
 
-.unchecked {
+.empty__heart {
     position: absolute;
     bottom: -10px;
     right: 0px;
     color: #353535;
 }
 
-input {
+#heart {
     position: absolute;
     bottom: -10px;
     right: 0px;
     display: none;
 }
 
-input:checked~.checked {
+#heart:checked ~ .full__heart {
     position: absolute;
     z-index: 1;
     bottom: -10px;
