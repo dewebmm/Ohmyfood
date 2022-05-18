@@ -121,7 +121,7 @@ main{
     display: none;
 }
 
-#heart:checked + .full__heart {
+#heart:checked ~ .full__heart {
     position: absolute;
     z-index: 1;
     top: 8px;
