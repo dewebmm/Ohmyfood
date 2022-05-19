@@ -367,7 +367,6 @@ transform:scaleX(0.9);
 
 .heart:checked ~ .full__heart {
     position: absolute;
-    z-index: 1;
     bottom: -10px;
     right: -10px;
     background: linear-gradient(to top, #FF79DA, #9356DC, transparent 80%);
