@@ -369,14 +369,14 @@ transform:scaleX(0.9);
     color: #353535;
 }
 
-#heart {
+.heart {
     position: absolute;
     bottom: -10px;
     right: 0px;
     display: none;
 }
 
-#heart:checked ~ .full__heart {
+.heart:checked ~ .full__heart {
     position: absolute;
     z-index: 1;
     bottom: -10px;
