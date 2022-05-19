@@ -273,6 +273,20 @@ a:visited {
   counter-increment: number;
   margin-bottom: 5px;
 }
+.fonctionnement ol .liste::before {
+  position: absolute;
+  margin-top: 20px;
+  height: 20px;
+  left: -15px;
+  line-height: 20px;
+  content: counter(number);
+  font-weight: normal;
+  background: #9356DC;
+  border-radius: 100%;
+  color: white;
+  text-align: center;
+  padding: 5px 10px;
+}
 .fonctionnement ol .liste:hover {
   transition: 0.6s;
   background: #F5EDFF;
@@ -290,20 +304,6 @@ a:visited {
 .fonctionnement ol .liste:not(:hover) .fa-list,
 .fonctionnement ol .liste:not(:hover) .fa-store {
   transition: 0.6s;
-}
-.fonctionnement ol .liste::before {
-  position: absolute;
-  margin-top: 20px;
-  height: 20px;
-  left: -15px;
-  line-height: 20px;
-  content: counter(number);
-  font-weight: normal;
-  background: #9356DC;
-  border-radius: 100%;
-  color: white;
-  text-align: center;
-  padding: 5px 10px;
 }
 
 .fa-mobile-screen-button, .fa-list, .fa-store {

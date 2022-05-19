@@ -223,6 +223,20 @@ a:visited {
             border-radius: 20px;
             counter-increment: number;
             margin-bottom: 5px;
+            &::before{
+                    position: absolute;
+                    margin-top: 20px;
+                    height: 20px;
+                    left: -15px;
+                    line-height: 20px;
+                    content: counter(number);
+                    font-weight: normal;
+                    background: #9356DC;
+                    border-radius: 100%;
+                    color: white;
+                    text-align: center;
+                    padding: 5px 10px;
+                }
             &:hover{
                 transition: 0.6s;
                 background: #F5EDFF;
@@ -243,22 +257,7 @@ a:visited {
             }  
             
         }
-            
-
-        .liste::before{            
-            position: absolute;
-            margin-top: 20px;
-            height: 20px;
-            left: -15px;
-            line-height: 20px;
-            content: counter(number);
-            font-weight: normal;
-            background: #9356DC;
-            border-radius: 100%;
-            color: white;
-            text-align: center;
-            padding: 5px 10px;
-        }
+         
     }
 }
 
